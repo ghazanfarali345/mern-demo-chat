@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "chat app on mern stack with socket io",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "node src/index.js",
     "server": "nodemon src/index.js",
