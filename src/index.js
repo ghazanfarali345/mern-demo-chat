@@ -8,6 +8,7 @@ const { notFound, errorHandler } = require("./middlewares/errorHandler");
 const userRoutes = require("../src/users/users.route");
 const chatRoutes = require("../src/chats/chats.route");
 const messageRoutes = require("../src/messages/messages.route");
+const logger = require("./utils/logger");
 
 dotenv.config();
 const {
