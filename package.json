@@ -7,10 +7,8 @@
     "node": "16.x"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build",
-    "server": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon src/index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend"
   },
   "author": "Ghazanfar Ali",
   "license": "ISC",
