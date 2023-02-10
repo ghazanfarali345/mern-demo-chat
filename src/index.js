@@ -19,7 +19,7 @@ const {
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
@@ -53,7 +53,7 @@ const server = app.listen(PORT, async () => {
 });
 const io = new Server(server, {
   pingTimeout: 60000,
-  cors: "http://localhost:3000",
+  cors: "*",
 });
 
 io.on("connection", (socket) => {
